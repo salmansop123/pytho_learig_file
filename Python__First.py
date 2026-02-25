@@ -161,45 +161,52 @@ import math
 # print("You guess the corrcet number")
 
 # Building the car game
+# counter = 0
+# print ("Please enter help")
 
-# while userEnter.upper() == "HELP":
-#     if userEnter.upper() ==  "HELP":
-#         print("""
-#                 start - to start the car
-#                 stop - to stop the car
-#                 quit - to exit
-#                 """)
-#         break
+# while True:
+#     userInput = input("> ").upper()
+
+#     if userInput.upper() == "START":
+#         if counter == 0:
+#              print("Car started... Ready to go!")
+#              counter = 1
+
+#         else:
+#              print("Car is already started")
+
+#     elif userInput.upper() == "STOP": 
+#             if counter > 0:
+#                  print("Car is stopped")
+#                  counter = 0
+#             else:
+#                  print("Car is already stopped")
+#     elif userInput.upper() == "HELP":
+#          print("""
+# start - to start the car
+# stop - to stop the car
+# quit - to exit
+# """)
+#     elif userInput.upper() == "QUIT":
+#             print("Exiting game...")
+#             break
 #     else:
-#          userEnter = input("Please enter help = ")
-counter = 0
-print ("Please enter help")
+#         print("I don't understand that...")
 
-while True:
-    userInput = input("> ").upper()
+# For loop
+# for item in range(10):
+#     print(item)
 
-    if userInput.upper() == "START":
-        if counter == 0:
-             print("Car started... Ready to go!")
-             counter = 1
+# for item in range(5,10):
+#     print(item)
 
-        else:
-             print("Car is already started")
+# (5 ,10) means ir range between 5 to 10 and means it jumps 2 numbers
+# for item in range(5,10,2):
+#     print(item)
 
-    elif userInput.upper() == "STOP": 
-            if counter > 0:
-                 print("Car is stopped")
-                 counter = 0
-            else:
-                 print("Car is already stopped")
-    elif userInput.upper() == "HELP":
-         print("""
-start - to start the car
-stop - to stop the car
-quit - to exit
-""")
-    elif userInput.upper() == "QUIT":
-            print("Exiting game...")
-            break
-    else:
-        print("I don't understand that...")
+# Ex Total number of list amount
+total = 0
+for itemsAmount in (10,20,30):
+    total = itemsAmount + total
+
+print(total)
