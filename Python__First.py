@@ -116,20 +116,17 @@ import math
 # Guess the number game
 # numberToGuess = 57
 # number = int(input("Plese enter your number = "))
-
 # while number != numberToGuess:
 #     if number < numberToGuess:
 #         print("Plaese ente greater number")
 #     elif number > numberToGuess:
 #         print("Plesae enter less number")
 #     number = int(input("Plese enter your number again = "))
-
 # print("Congratulation you guess the correct number")
 
 # Ex 02
 # Building the car game
 # userEnter = input("Please enter help = ")
-
 # while userEnter.upper() == "HELP":
 #     if userEnter.upper() ==  "HELP":
 #         print("""
@@ -139,7 +136,6 @@ import math
 #                 """)
 #     else:
 #          userEnter = input("Please enter help = ")
-    
 # while True:
 #     userInput = input("Please enter option ")
 #     if userInput.upper() == "START":
@@ -152,23 +148,58 @@ import math
 #     else:
 #         print("I don't understand that...")
 
+
+# Guess the number game practice second time
+# numberToGuess = 57
+# number = int(input("Please enter your number to guess = "))
+# while number != numberToGuess:
+#     if numberToGuess > number:
+#         print("Enter smaller number ")
+#     elif numberToGuess < number:
+#         print("Enter greter number ")
+#     number = int(input("Please enter your number to guess = "))
+# print("You guess the corrcet number")
+
+# Building the car game
+
+# while userEnter.upper() == "HELP":
+#     if userEnter.upper() ==  "HELP":
+#         print("""
+#                 start - to start the car
+#                 stop - to stop the car
+#                 quit - to exit
+#                 """)
+#         break
+#     else:
+#          userEnter = input("Please enter help = ")
+counter = 0
+print ("Please enter help")
+
 while True:
-     userInput  = input("Please enter option: ")
-     if userInput.upper() == "HELP":
-           print("""
-                start - to start the car
-                stop - to stop the car
-                quit - to exit
-                """)
+    userInput = input("> ").upper()
 
-     elif userInput.upper() == "START":
-        print("Car started... Ready to go!")
+    if userInput.upper() == "START":
+        if counter == 0:
+             print("Car started... Ready to go!")
+             counter = 1
 
-     elif userInput.upper() == "STOP":
-        print("Car stopped.")
+        else:
+             print("Car is already started")
 
-     elif userInput.upper() == "QUIT":
-        print("Exiting game...")
-        break
-     else:
-         print("I don't understand that...")
+    elif userInput.upper() == "STOP": 
+            if counter > 0:
+                 print("Car is stopped")
+                 counter = 0
+            else:
+                 print("Car is already stopped")
+    elif userInput.upper() == "HELP":
+         print("""
+start - to start the car
+stop - to stop the car
+quit - to exit
+""")
+    elif userInput.upper() == "QUIT":
+            print("Exiting game...")
+            break
+    else:
+        print("I don't understand that...")
