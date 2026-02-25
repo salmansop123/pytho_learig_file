@@ -1,0 +1,174 @@
+import math
+# print("Salman Mazhar")
+
+# if 5 < 2:
+#     print("Five is graeter than two!")
+# else:
+#     print("Two is greater than five!")
+
+# print("Add Number")
+# print(3 + 5)
+
+# age = 27
+
+# name = "salman mazhar"
+
+# print("My name is" , name , "and my age is", str(age)) ; print("I am new to the world of Python Programming")
+# print ("*" * 10)
+
+
+# Variable
+
+# # Ex 01
+# name = "John Smith"
+# age = 20
+# isPatientOld = True
+
+# # Ex 02
+# name = input("Waht is you name ")
+# favouriteColor = input("what is your favourite color ")
+# print("My name is " + name + " and my favourite color is " + favouriteColor)
+
+# Ex 03
+# weightInPound = input("What is your weight ")
+# weightInKg  = int(weightInPound) * 0.45359237
+# print("Your Weight in Kg is = " + str(weightInKg))
+
+# Ex 04
+# message = "Salman is a coder"
+# print(message[1:-1])
+# print(message[0:])
+# print(message[:])
+# print(message[3:6])
+
+# Ex 05
+# first = "salman"
+# last = "mazhar"
+# message = f'{first} [{last}] is a coder'
+# print(message)
+
+# Ex 06
+# course = "Python beginner course"
+# print(len(course))
+# print(course.upper())
+# print(course.lower())
+# print(course.find("P"))
+# print(course.replace("beginner","Absolute Begnienners"))
+# print("Python" in course)
+
+# Ex 07
+# x = (2+3) * 10 - 3
+# print(x)
+
+# Ex 08
+# x = 2.9
+# y = -2.9
+# print(round(x))
+# print(abs(y))
+# print(math.ceil(x))
+# print(math.floor(x))
+
+# Ex 09
+# buyerCredit = input("Enter your credit info = ")
+# price = 1000000
+
+# if int(buyerCredit) < 10000:
+#     downpayment  =  0.1 * price
+#     print("You need to put 10% " + str(downpayment))
+# else:
+#     downpayment  =  0.2 * price
+#     print(f"You need to put 20% {str(downpayment)}")
+
+# Ex 10
+# name = input("PLease eter yourr name ")
+
+# if len(name) < 3:
+#     print("Namae must contain at least 3 characters")
+# elif len(name) >= 20:
+#     print("Name can be a maaximun of 20 characters")
+# else:
+#     print("Name looks good!")
+
+# Ex 11
+# weight = int(input("Please enter your weight = "))
+# unit = input("(L)bs or (K)kg: ")
+
+# if unit.upper() == "L":
+#     converted = weight * 0.54
+#     print(f"Your weight in lb is = {converted}")
+# elif unit.upper() == "K":
+#     converted = weight / 0.45
+#     print(f"Your weight in kg is = {converted}")
+
+# Ex 12
+# i = 1
+# while i<=5:
+#     print(i)
+#     i=i+1
+# print ("done")
+
+# i = 1
+# while i<=5:
+#     print("*" * i)
+#     i=i+1
+# print ("done")
+
+# Guess the number game
+# numberToGuess = 57
+# number = int(input("Plese enter your number = "))
+
+# while number != numberToGuess:
+#     if number < numberToGuess:
+#         print("Plaese ente greater number")
+#     elif number > numberToGuess:
+#         print("Plesae enter less number")
+#     number = int(input("Plese enter your number again = "))
+
+# print("Congratulation you guess the correct number")
+
+# Ex 02
+# Building the car game
+# userEnter = input("Please enter help = ")
+
+# while userEnter.upper() == "HELP":
+#     if userEnter.upper() ==  "HELP":
+#         print("""
+#                 start - to start the car
+#                 stop - to stop the car
+#                 quit - to exit
+#                 """)
+#     else:
+#          userEnter = input("Please enter help = ")
+    
+# while True:
+#     userInput = input("Please enter option ")
+#     if userInput.upper() == "START":
+#         print("Car started... Ready to go!")
+#     elif userInput.upper() == "STOP":
+#             print("Car stopped.")
+#     elif userInput.upper() == "QUIT":
+#             print("Exiting game...")
+#             break
+#     else:
+#         print("I don't understand that...")
+
+while True:
+     userInput  = input("Please enter option: ")
+     if userInput.upper() == "HELP":
+           print("""
+                start - to start the car
+                stop - to stop the car
+                quit - to exit
+                """)
+
+     elif userInput.upper() == "START":
+        print("Car started... Ready to go!")
+
+     elif userInput.upper() == "STOP":
+        print("Car stopped.")
+
+     elif userInput.upper() == "QUIT":
+        print("Exiting game...")
+        break
+     else:
+         print("I don't understand that...")
