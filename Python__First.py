@@ -236,3 +236,61 @@ import math
 #     if x > biggetNumber:
 #         biggetNumber = x
 # print("Largest number in array is " , biggetNumber)
+
+# 2D list
+# matrix = [
+#     [1,2,3],
+#     [4,5,6],
+#     [7,8,9]
+# ]
+# print(matrix[0][2])
+# for row in matrix:
+#     for item in row:
+#         print(item)
+
+#list methods
+# Add new number in the list
+# numbers = [5,3,4,6,7,8,1,4]
+# numbers.append(20)
+# print(numbers)
+
+# # Add number between the list
+# numbers.insert(3,18)
+# print(numbers)
+
+# #To item from the list
+# numbers.remove(18)
+# print(numbers)
+
+# # To remove item from the end of the list
+# numbers.pop()
+# print(numbers)
+
+# #To clearr the data frorm he list
+# # numbers.clear()
+# # print(numbers)
+
+# #To find tthe index number of the list item
+# print(numbers.index(3))
+
+# # To find if number is present in the string or not
+# print(100 in numbers)
+
+# #To find the repeated value in the list
+# print(numbers.count(4))
+
+# #To sort he list
+# numbers.sort()
+# print(numbers)
+
+# #To Sort list in reverse
+# numbers.reverse()
+# print(numbers)
+
+#List Methods Ex
+numbers = [2,2,4,5,6,6,7,8,9,9]
+uniques = []
+for number in numbers:
+    if number not in uniques:
+        uniques.append(number)
+print(uniques)
