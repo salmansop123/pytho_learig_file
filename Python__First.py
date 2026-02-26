@@ -204,9 +204,27 @@ import math
 # for item in range(5,10,2):
 #     print(item)
 
-# Ex Total number of list amount
-total = 0
-for itemsAmount in (10,20,30):
-    total = itemsAmount + total
+#For Ex Total number of list amount
+# for itemsAmount in (10,20,30):
+#     total = itemsAmount + total
 
-print(total)
+# print(total)
+
+# Nested Loop 
+# for x in range(4):
+#     for y in range(3):
+#         print(f'({x},{y})')
+
+# Nested Loop Ex
+# My solution
+# numbers = [5,2,5,2,2]
+# for y in numbers:
+#         print(y * "x")
+
+# Mosh Solution without python built in function
+# numbers=[5,2,5,2,2]
+# for x in numbers:
+#     output = ""
+#     for y in range(x):
+#         output += "x"
+#     print(output)
