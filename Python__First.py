@@ -228,3 +228,11 @@ import math
 #     for y in range(x):
 #         output += "x"
 #     print(output)
+
+# Largest Number in list find Ex
+# numbers = [1,2,3,4,5,3,213,43,2,4,666]
+# biggetNumber = numbers[0]
+# for x in numbers:
+#     if x > biggetNumber:
+#         biggetNumber = x
+# print("Largest number in array is " , biggetNumber)
