@@ -329,15 +329,58 @@ import math
 # print(customer["birthdate"])
 
 # Dict Ex
-userInput = input("Phone No : ")
+# userInput = input("Phone No : ")
 
-phoneDicty = {
-    "1" : "One",
-    "2" : "Two",
-    "3" : "Three",
-    "4" : "Four"
-}
-output = ""
-for x in userInput:
-    output += phoneDicty.get(x , "!") + " "
-print(output)
+# phoneDicty = {
+#     "1" : "One",
+#     "2" : "Two",
+#     "3" : "Three",
+#     "4" : "Four"
+# }
+# output = ""
+# for x in userInput:
+#     output += phoneDicty.get(x , "!") + " "
+# print(output)
+
+# function
+# Simple Addtion function
+# def greet_user():
+#     print("""
+#         how are yoiu
+#           i am fine 
+#           and you
+#         """)
+# greet_user()
+
+# Prameters in fucntion
+# def additionOfNumbers(x,y):
+#     print(x+y)
+# additionOfNumbers(4,5)
+
+# Prameters in fucntion
+# def additionOfNumbers(x,y):
+#     return (x+y)
+# v = additionOfNumbers(4,5)
+
+# Mosh EX
+# def greet_user(first_name, last_name):
+#     print(f"Hello {first_name} {last_name}")
+#     print("Welcomwe abord!")
+
+# greet_user("Salman", "Mazhar")
+# greet_user("hamza", "Mazhar")
+# greet_user("usman", "Mazhar")
+# greet_user("afaq", "javed")
+
+# Exceptoin
+# try:
+#     age = int(input("Age : "))
+#     income = 20000
+#     risk = income/age
+#     print(age)
+
+# # Only excepts error that you define in except
+# except ZeroDivisionError:
+#     print('Age cannot be divided by 0')
+# except ValueError:
+#     print("invalud value")
