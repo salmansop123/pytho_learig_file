@@ -288,9 +288,56 @@ import math
 # print(numbers)
 
 #List Methods Ex
-numbers = [2,2,4,5,6,6,7,8,9,9]
-uniques = []
-for number in numbers:
-    if number not in uniques:
-        uniques.append(number)
-print(uniques)
+# numbers = [2,2,4,5,6,6,7,8,9,9]
+# uniques = []
+# for number in numbers:
+#     if number not in uniques:
+#         uniques.append(number)
+# print(uniques)
+
+# Tuples are like a list we can store items init but we cannot change its value like list
+# numbers = (1,2,3)
+# # numbers[0] = 10 -- We cannot change its value if we define a tuple
+# print(numbers)
+
+
+#unpacking is a powerfull tool in python EX we have a list and we want to use each item in the individually so we can use unpacking at that tttime
+# items = (1,2,3)
+# x, y, z = items
+# print(x)
+# it auttomatically see the item in tuples and set them to the values we define
+
+#Dictionaries
+#One of the most important part is the dictionaries in the python
+#We store information tthat comes in key value pair
+
+# customer = {
+#     "name" : "Salman",
+#     "lastName" : "Mazhar",
+#     "age" : 30,
+#     "isVrified" : False
+# }
+
+# # print(customer["name"], customer["lastName"])
+# # print(customer.get("birthday", "Jan 1 1990")) ineted of none we get defaul value
+
+# # We can also update value in the dict
+# customer["name"] = "Salman Mazhar"
+# print(customer["name"])
+
+# customer["birthdate"] = "Jan 01 2000"
+# print(customer["birthdate"])
+
+# Dict Ex
+userInput = input("Phone No : ")
+
+phoneDicty = {
+    "1" : "One",
+    "2" : "Two",
+    "3" : "Three",
+    "4" : "Four"
+}
+output = ""
+for x in userInput:
+    output += phoneDicty.get(x , "!") + " "
+print(output)
