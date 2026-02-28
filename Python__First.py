@@ -403,16 +403,48 @@ import math
 # print(point.x)
 # print(point.y)
 
+# Classes example
+# class Person:
+#     def __init__(self,name):
+#         self.name = name
 
-class Person:
-    def __init__(self,name):
-        self.name = name
+#     def talk(self):
+#         print(f"Hi, I am {self.name}")
 
-    def talk(self):
-        print(f"Hi, I am {self.name}")
+# salman = Person("Salman Mazhar")
+# salman.talk()
 
-salman = Person("Salman Mazhar")
-salman.talk()
+# usman = Person("Usman Mazhar")
+# usman.talk()
 
-usman = Person("Usman Mazhar")
-usman.talk()
+
+# Classes inheritance
+class Mammal:
+    def walk(self):
+        # print("Walking")
+        return "walking"
+    def flying(self):
+        return "flying"
+
+class Dog(Mammal):
+    def animalDog (self,animalName):
+        print(f"{animalName} is " + self.walk()) 
+        # self.walk()
+
+class Cat(Mammal):
+    def animalCat (self , animalName):
+        print(f"{animalName} is walking")
+        self.walk()
+
+class Parrot(Mammal):
+    def birdParrot (self, birdName):
+        print(f"{birdName} is "+self.flying())
+
+dog1 = Dog()
+dog1.animalDog("dog ")
+
+cat1 = Cat()
+cat1.animalCat("Cat ")
+
+bird1 = Parrot()
+bird1.birdParrot("Macaw")
