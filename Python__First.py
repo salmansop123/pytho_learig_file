@@ -456,7 +456,24 @@ import math
 # from converters import lbs_to_kg
 # print(f"Your weight in kg is {lbs_to_kg((164.4444))}")
 
+# from utils import find_max #This will only import function from the other file
+# import utils #This will import all the function from the module file
 
-import utils
-numbers = [10,8,7,4]
-print(utils.find_max(numbers))
+# #Both are correct
+# numbers = [10,8,7,4]
+# print(find_max(numbers))
+# print(utils.find_max(numbers))
+
+#Package for modules
+#This is good to work but we use other approach to make our life easier
+import ecommerce.shipping
+ecommerce.shipping.calculate_shipping()
+
+#Second approach
+from ecommerce.shipping import calculate_shipping
+calculate_shipping()
+
+#Third and ery useable approach
+#Using this approach we can import all he modules with one line and use them as many as we want
+from ecommerce import shipping
+shipping.calculate_shipping()
