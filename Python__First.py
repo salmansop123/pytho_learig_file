@@ -384,3 +384,35 @@ import math
 #     print('Age cannot be divided by 0')
 # except ValueError:
 #     print("invalud value")
+
+
+
+# Classes
+
+# class Point:
+#     def __init__(self,x,y): # Connstructor
+#         self.x = x
+#         self.y = y
+#     def move(self):
+#         print("Moev")
+#     def draw(self):
+#         print("Draw")
+
+# point = Point(10 ,320)
+# point.x = 11
+# print(point.x)
+# print(point.y)
+
+
+class Person:
+    def __init__(self,name):
+        self.name = name
+
+    def talk(self):
+        print(f"Hi, I am {self.name}")
+
+salman = Person("Salman Mazhar")
+salman.talk()
+
+usman = Person("Usman Mazhar")
+usman.talk()
