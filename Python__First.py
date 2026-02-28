@@ -419,32 +419,44 @@ import math
 
 
 # Classes inheritance
-class Mammal:
-    def walk(self):
-        # print("Walking")
-        return "walking"
-    def flying(self):
-        return "flying"
+# class Mammal:
+#     def walk(self):
+#         # print("Walking")
+#         return "walking"
+#     def flying(self):
+#         return "flying"
 
-class Dog(Mammal):
-    def animalDog (self,animalName):
-        print(f"{animalName} is " + self.walk()) 
-        # self.walk()
+# class Dog(Mammal):
+#     def animalDog (self,animalName):
+#         print(f"{animalName} is " + self.walk()) 
+#         # self.walk()
 
-class Cat(Mammal):
-    def animalCat (self , animalName):
-        print(f"{animalName} is walking")
-        self.walk()
+# class Cat(Mammal):
+#     def animalCat (self , animalName):
+#         print(f"{animalName} is walking")
+#         self.walk()
 
-class Parrot(Mammal):
-    def birdParrot (self, birdName):
-        print(f"{birdName} is "+self.flying())
+# class Parrot(Mammal):
+#     def birdParrot (self, birdName):
+#         print(f"{birdName} is "+self.flying())
 
-dog1 = Dog()
-dog1.animalDog("dog ")
+# dog1 = Dog()
+# dog1.animalDog("dog ")
 
-cat1 = Cat()
-cat1.animalCat("Cat ")
+# cat1 = Cat()
+# cat1.animalCat("Cat ")
 
-bird1 = Parrot()
-bird1.birdParrot("Macaw")
+# bird1 = Parrot()
+# bird1.birdParrot("Macaw")
+
+#Modules practice and Ex
+# import converters
+# print(f"Your weight in kg is {converters.kg_to_lbs((74))}")
+
+# from converters import lbs_to_kg
+# print(f"Your weight in kg is {lbs_to_kg((164.4444))}")
+
+
+import utils
+numbers = [10,8,7,4]
+print(utils.find_max(numbers))
