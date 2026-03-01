@@ -466,14 +466,56 @@ import math
 
 #Package for modules
 #This is good to work but we use other approach to make our life easier
-import ecommerce.shipping
-ecommerce.shipping.calculate_shipping()
+# import ecommerce.shipping
+# ecommerce.shipping.calculate_shipping()
 
-#Second approach
-from ecommerce.shipping import calculate_shipping
-calculate_shipping()
+# #Second approach
+# from ecommerce.shipping import calculate_shipping
+# calculate_shipping()
 
-#Third and ery useable approach
-#Using this approach we can import all he modules with one line and use them as many as we want
-from ecommerce import shipping
-shipping.calculate_shipping()
+# #Third and ery useable approach
+# #Using this approach we can import all he modules with one line and use them as many as we want
+# from ecommerce import shipping
+# shipping.calculate_shipping()
+
+#Generathing random values
+import random
+# for i in range(3):
+#     print(random.random())
+
+
+# This will generate only random values that we provide
+# for i in range(3):
+#     print(random.randint(10,20))
+
+
+
+# WE can also choose the values randomly from the list
+# members = ["salman", "usman", "hamza", "ahsan", "afaq"]
+# leader = random.choice(members)
+# print(leader)
+
+# Dice game
+# Solution 1
+# class Dice:
+#     def roll(self):
+#         first = random.randint(1,6)
+#         second = random.randint(1,6)
+#         print(first, second)
+
+# dice1 = Dice()
+# dice1.roll()
+
+# Solution 2
+class Dice:
+    def roll(self):
+        first = random.randint(1,6)
+        second = random.randint(1,6)
+        return [first, second]
+
+dice1 = Dice()
+print(dice1.roll())
+
+#My approach but not very good
+# for i in range(3):
+#     print(f"({random.randint(1,6)} , {random.randint(1,6)})")
