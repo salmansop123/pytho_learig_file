@@ -507,15 +507,37 @@ import random
 # dice1.roll()
 
 # Solution 2
-class Dice:
-    def roll(self):
-        first = random.randint(1,6)
-        second = random.randint(1,6)
-        return [first, second]
+# class Dice:
+#     def roll(self):
+#         first = random.randint(1,6)
+#         second = random.randint(1,6)
+#         return [first, second]
 
-dice1 = Dice()
-print(dice1.roll())
+# dice1 = Dice()
+# print(dice1.roll())
 
 #My approach but not very good
 # for i in range(3):
 #     print(f"({random.randint(1,6)} , {random.randint(1,6)})")
+
+
+# Working with directory
+from pathlib import Path
+
+# To find the directory exists or not
+# path = Path ("ecoomerce")
+# print(path.exists())
+
+# To create a directory
+# path = Path("emails")
+# print(path.mkdir())
+
+#To remoe the directory
+# print(path.rmdir())
+
+
+#To find the files and directry in system in the current path
+path = Path()
+# print(path.glob('*.py'))
+for file in path.glob("*.py"):
+    print(file)
